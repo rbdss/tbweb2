@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootsrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- css pribadi -->
     <link rel="stylesheet" href="/Asset/Css/style.css">
     <title>AG Coffee</title>
@@ -17,7 +19,7 @@
     <div id="navbar" class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">AG Coffee</a>
+                <a class="navbar-brand" href="#"><i class="bi bi-cup-fill"></i> AG Coffee</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -153,7 +155,7 @@
         <path fill="#6f4e37" fill-opacity="1" d="M0,256L120,256C240,256,480,256,720,266.7C960,277,1200,299,1320,309.3L1440,320L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
     </svg>
     <footer class="text-center text-white pb-2">
-        <p>&copy; Muhammad Gilang & Asep Andi</p>
+        <p>Created By Muhammad Gilang & Asep Andi</p>
     </footer>
     <!-- end Footer -->
 
