@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- css pribadi -->
     <link rel="stylesheet" href="/Asset/Css/style.css">
-    <title>Portofolio </title>
+    <title><?= $title; ?></title>
 </head>
 
 <body>
