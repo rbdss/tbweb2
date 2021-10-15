@@ -15,7 +15,7 @@ class Admin extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Login',
+            'title' => 'Dashboard',
             'user' => $this->userModel->getUser()
         ];
         return view('Admin/index', $data);
@@ -112,5 +112,21 @@ class Admin extends BaseController
 
         session()->setFlashdata('pesan', 'User berhasil dibuat, silakan login');
         return redirect()->to('/admin');
+    }
+
+    public function portofolio()
+    {
+        $data = [
+            'title' => 'Dashboard',
+        ];
+        return view('Admin/portofolio', $data);
+    }
+
+    public function content()
+    {
+        $data = [
+            'title' => 'Dashboard',
+        ];
+        return view('Admin/content', $data);
     }
 }

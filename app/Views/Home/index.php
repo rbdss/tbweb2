@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- css pribadi -->
     <link rel="stylesheet" href="/Asset/Css/style.css">
-    <title>AG Coffee</title>
+    <title>Portofolio </title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div id="navbar" class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="#"><i class="bi bi-cup-fill"></i> AG Coffee</a>
+                <a class="navbar-brand" href="#"><i class="bi bi-camera-fill"></i> AG Portofolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,7 +38,7 @@
 
     <!-- Profile -->
     <section class="jumbotron text-center">
-        <img src="/Asset/Img/profile-icon.png" width="200" class="rounded-circle img-thumbnail">
+        <img src="/Asset/Img/profile-icon.png" width="200" class="rounded-circle img-thumbnail mb-2">
         <h1 class="display-4">Asep Gilang</h1>
         <p class="lead">Informatic Engineering | Mercubuana University</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -52,7 +52,7 @@
         <div class="container pt-3">
             <div class="row">
                 <div class="col text-center mb-3">
-                    <h2>About Us</h2>
+                    <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5">
