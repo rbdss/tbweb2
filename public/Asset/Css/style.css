@@ -19,3 +19,7 @@ footer {
 section {
   padding-top: 5rem;
 }
+
+.table > tbody > tr > * {
+  vertical-align: middle;
+}

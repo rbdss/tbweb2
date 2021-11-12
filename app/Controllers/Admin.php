@@ -2,24 +2,21 @@
 
 namespace App\Controllers;
 
+use App\Models\DataModel;
+use App\Models\PesanModel;
 use App\Models\UserModel;
 
 class Admin extends BaseController
 {
     protected $userModel;
+    protected $dataModel;
     public function __construct()
     {
         $this->userModel = new UserModel();
+        $this->dataModel = new DataModel();
+        $this->pesanModel = new PesanModel();
     }
 
-    public function index()
-    {
-        $data = [
-            'title' => 'Dashboard',
-            'user' => $this->userModel->getUser()
-        ];
-        return view('Admin/index', $data);
-    }
 
     public function login()
     {
@@ -56,6 +53,19 @@ class Admin extends BaseController
             return redirect()->back();
         }
     }
+
+    public function index()
+    {
+        $data = [
+            'title' => 'Dashboard',
+            'user' => $this->userModel->getUser()
+        ];
+        if (is_null(session()->get('logged_in'))) {
+            return redirect()->to('/admin');
+        }
+        return view('Admin/index', $data);
+    }
+
     function logout()
     {
         session()->destroy();
@@ -117,7 +127,8 @@ class Admin extends BaseController
     public function portofolio()
     {
         $data = [
-            'title' => 'Dashboard',
+            'title' => 'Dashboard Portofolio',
+            'konten' => $this->dataModel->getData(1)
         ];
         return view('Admin/portofolio', $data);
     }
@@ -128,5 +139,15 @@ class Admin extends BaseController
             'title' => 'Dashboard',
         ];
         return view('Admin/content', $data);
+    }
+
+    public function pesan()
+    {
+        $data = [
+            'title' => 'Dashboard',
+            'pesan' => $this->pesanModel->getData(),
+            'subtitle' => 'Pesan'
+        ];
+        return view('Admin/pesan', $data);
     }
 }

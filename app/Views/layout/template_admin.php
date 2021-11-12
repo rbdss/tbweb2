@@ -47,11 +47,19 @@
 
         </li>
 
-        <!-- Nav Item - Project Collapse Menu -->
+        <!-- Nav Item - Content Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link" href="/admin/content">
                 <i class="fas fa-fw fa-images"></i>
                 <span>Content</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Pesan Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/pesan">
+                <i class="fas fa-fw fa-envelope"></i>
+                <span>Pesan</span>
             </a>
         </li>
 
@@ -74,22 +82,25 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow-sm">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                     <i class="fa fa-bars"></i>
                 </button>
-
+                <!-- Subtitle -->
+                <h3 class="my-auto"><?= $subtitle; ?></h3>
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
+
+
                     <!-- Nav Item - Messages -->
                     <li class="nav-item dropdown no-arrow mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="pesanMasuk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-envelope fa-fw"></i>
+                        <a class="nav-link dropdown-toggle" href="/admin/pesan" id="pesanMasuk" role="button">
+                            <i class="fas fa-envelope fa-fw" href="#"></i>
                             <!-- Counter - Messages -->
-                            <span class="badge badge-danger badge-counter">7</span>
+                            <span class="badge badge-danger badge-counter"></span>
                         </a>
 
                     </li>
@@ -99,12 +110,12 @@
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['nama']; ?></span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= session()->get('nama'); ?></span>
                             <img class="img-profile rounded-circle" src="/Asset/Img/profile-icon.png">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="/admin/index">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
                             </a>
@@ -131,7 +142,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Your Website 2020</span>
+                    <span>Copyright &copy; Kelompok 5 2021</span>
                 </div>
             </div>
         </footer>

@@ -15,8 +15,8 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title"><?= $_SESSION['nama']; ?></h5>
-                    <p class="card-text"><?= $_SESSION['username']; ?></p>
+                    <h5 class="card-title"><?= session()->get('nama'); ?></h5>
+                    <p class="card-text"><?= session()->get('username'); ?></p>
                     <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>

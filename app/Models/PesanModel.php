@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class DataModel extends Model
+class PesanModel extends Model
 {
-    protected $table = 'data';
-    protected $allowedFields = ['foto', 'nama', 'info_diri', 'about', 'about2'];
+    protected $table = 'pesan';
+    protected $allowedFields = ['nama', 'email', 'pesan'];
 
     public function getData($id = false)
     {

@@ -27,7 +27,7 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#about">About</a>
-                        <a class="nav-link" href="#produk">Produk</a>
+                        <a class="nav-link" href="#produk">Content</a>
                         <a class="nav-link" href="#kontak">Contact</a>
                     </div>
                 </div>
@@ -35,18 +35,16 @@
         </nav>
     </div>
     <!-- end navbar -->
-
     <!-- Profile -->
     <section class="jumbotron text-center">
-        <img src="/Asset/Img/profile-icon.png" width="200" class="rounded-circle img-thumbnail mb-2">
-        <h1 class="display-4">Asep Gilang</h1>
-        <p class="lead">Informatic Engineering | Mercubuana University</p>
+        <img src="/Asset/Img/<?= $konten['foto']; ?>" width="200" class="rounded-circle img-thumbnail mb-2">
+        <h1 class="display-4"><?= $konten['nama']; ?></h1>
+        <p class="lead"><?= $konten['info_diri']; ?></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#ffffff" fill-opacity="1" d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
         </svg>
     </section>
     <!-- end Profile -->
-
     <!-- About -->
     <section id="about">
         <div class="container pt-3">
@@ -57,10 +55,10 @@
             </div>
             <div class="row justify-content-center fs-5">
                 <div class="col-md-4 mb-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quibusdam nulla! Veniam provident illo ex exercitationem accusamus doloremque voluptate nihil dignissimos? Amet provident minus eveniet exercitationem quibusdam labore asperiores repudiandae!</p>
+                    <p><?= $konten['about']; ?></p>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur doloribus aliquam dolorem veniam placeat nihil incidunt fugit laboriosam expedita illum exercitationem, quisquam rem quas reiciendis voluptatum. Quo, laudantium suscipit? Odit.</p>
+                    <p><?= $konten['about2']; ?></p>
                 </div>
             </div>
         </div>
@@ -75,7 +73,7 @@
         <div class="container pt-4">
             <div class="row text-center mb-3">
                 <div class="col">
-                    <h2>Produk Kami</h2>
+                    <h2>Content</h2>
                 </div>
             </div>
             <div class="row">
@@ -124,7 +122,8 @@
                         <strong>Terima Kasih</strong> Pesan telah dikirim.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                    <form name="kirim-pesan">
+                    <form action="/home/save" method="POST" name="kirim-pesan">
+                        <?= csrf_field(); ?>
                         <div class="mb-3">
                             <label for="nama" class="form-label">Nama Lengkap</label>
                             <input type="text" class="form-control" id="nama" aria-describedby="nama" name="nama">
@@ -162,7 +161,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script>
+    <!-- <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbznuezmRu4TVoK3jEPQTl0sA0-rEQ_LxwWzCL6MA5odqatXZF8pT9Ab0hlYUh_U9e3p/exec'
         const form = document.forms['kirim-pesan']
         const btnSend = document.querySelector('.btn-send')
@@ -188,7 +187,7 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
+    </script> -->
 
 </body>
 
