@@ -58,7 +58,8 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Dashboard',
-            'user' => $this->userModel->getUser()
+            'user' => $this->userModel->getUser(),
+            'subtitle' => 'Profile'
         ];
         if (is_null(session()->get('logged_in'))) {
             return redirect()->to('/admin');
@@ -127,8 +128,9 @@ class Admin extends BaseController
     public function portofolio()
     {
         $data = [
-            'title' => 'Dashboard Portofolio',
-            'konten' => $this->dataModel->getData(1)
+            'title' => 'Dashboard Portfolio',
+            'konten' => $this->dataModel->getData(1),
+            'subtitle' => 'Portfolio'
         ];
         return view('Admin/portofolio', $data);
     }
@@ -137,6 +139,7 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Dashboard',
+            'subtitle' => 'Content'
         ];
         return view('Admin/content', $data);
     }
@@ -149,5 +152,15 @@ class Admin extends BaseController
             'subtitle' => 'Pesan'
         ];
         return view('Admin/pesan', $data);
+    }
+
+    public function export()
+    {
+        $data = [
+            'title' => 'Pesan',
+            'pesan' => $this->pesanModel->getData(),
+            'subtitle' => 'Export'
+        ];
+        return view('Admin/export', $data);
     }
 }
