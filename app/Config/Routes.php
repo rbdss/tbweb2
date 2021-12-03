@@ -36,6 +36,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/admin', 'Admin::login');
 $routes->get('/admin/signup', 'Admin::signup');
+$routes->get('/admin/portfolio/(:any)', 'Admin::toEdit/$1');
 
 /*
  * --------------------------------------------------------------------

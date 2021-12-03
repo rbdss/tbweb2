@@ -81,7 +81,7 @@
                     <div class="card">
                         <img src="/Asset/Img/1.jpg" class="card-img-top" alt="Kopi">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Secangkir Kopi.</p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     <div class="card">
                         <img src="/Asset/Img/2.jpg" class="card-img-top" alt="Biji Kopi">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Biji Kopi.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="card">
                         <img src="/Asset/Img/3.jpg" class="card-img-top" alt="Proses">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Pembuatan Kopi.</p>
                         </div>
                     </div>
                 </div>

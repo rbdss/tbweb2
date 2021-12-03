@@ -82,12 +82,12 @@
             </li>
 
             <!-- Nav Item - Content Collapse Menu -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="/admin/content">
                     <i class="fas fa-fw fa-images"></i>
                     <span>Content</span>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Pesan Collapse Menu -->
             <li class="nav-item">

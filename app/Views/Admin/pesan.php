@@ -11,7 +11,7 @@
                 <th scope="col">Nama</th>
                 <th scope="col">Email</th>
                 <th scope="col">Pesan</th>
-                <th scope="col">Aksi</th>
+                <!-- <th scope="col">Aksi</th> -->
             </tr>
         </thead>
         <tbody>
@@ -22,9 +22,9 @@
                     <td><?= $p['nama']; ?></td>
                     <td><?= $p['email']; ?></td>
                     <td><?= $p['pesan']; ?></td>
-                    <td>
+                    <!-- <td>
                         <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                    </td>
+                    </td> -->
                 </tr>
             <?php endforeach; ?>
         </tbody>
